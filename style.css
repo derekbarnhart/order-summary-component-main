@@ -1,0 +1,133 @@
+html {
+  height:100%;
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  height: 100%;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-position: top;
+
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 23rem;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 .2rem -2px;
+  border-radius: 1rem;
+}
+
+.card__hero {
+  width: 100%;
+  background-image: url(/images/illustration-hero.svg);
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom:0;
+}
+
+.card__content {
+  padding: 1rem 2.1rem 1rem 2.1rem;
+  font-size: 14px;
+}
+
+.card__description h1 {
+  font-weight: 900;
+  margin:.9em 0 .1em 0;
+}
+
+.card__description p {
+  padding: 1em;
+  font-weight: 500;
+  line-height: 1.3rem;
+  color: hsl(224, 23%, 55%);
+  margin:0;
+}
+
+.card__plan {
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.1rem;
+  margin: .1rem 0 1.4rem 0;
+  border-radius: .5rem;
+  align-items: center;
+  text-align: left;
+}
+
+.card__plan img {
+  width: 2.4rem;
+  margin-right: .4rem;
+}
+
+.card__plan_details {
+  line-height: 1.3rem;
+}
+.card__plan_details--primary {
+  font-weight: 700;
+}
+.card__plan_details--secondary {
+  color: hsl(224, 23%, 55%);
+}
+
+.card__plan a, .card__plan a:visited {
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.card__plan a:hover {
+  text-decoration: none;
+}
+
+.card__plan_details * {
+  display: inline;
+  margin: .8rem;
+}
+
+.card__actions {
+  display:flex;
+  flex-direction: column;
+}
+
+.card__actions button {
+  display: block;
+  border: none;
+  border-radius: .5rem;
+  padding: .9rem 0 .9rem 0;
+  margin: .1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: .7rem;
+}
+
+.card__actions--primary {
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+}
+
+.card__actions--primary:hover, .card__plan_details a {
+  background-color:hsl(245, 75%, 68%);
+}
+
+
+.card__actions--secondary {
+  color: hsl(224, 23%, 55%);
+  background: none;
+}
+.card__actions--secondary:hover {
+  color:black;
+}
+
+@media screen and (max-width:375px) {
+  body {
+    background-image: none;
+  }
+
+  .card {
+    width: 20rem;
+  }
+}
